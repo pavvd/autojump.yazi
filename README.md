@@ -3,7 +3,7 @@ Change current directory via autojump.
 ## Installation
 
 ```bash
-$ ya pack -a pavvd/autojump
+ya pack -a pavvd/autojump
 ```
 
 ## Requirements
@@ -17,7 +17,7 @@ You can change "s" to preferred key.
 
 ```toml
 [[manager.prepend_keymap]]
-on   = ["s"] #Multi key hotkey looks like this [ "z", "j" ]
+on   = ["s"] #Multi key hotkey looks like this [ "z", "j" ] or like this "<C-u>"
 run  = "plugin autojump"
 desc = "Change directory using autojump"
 ```
