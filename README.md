@@ -12,7 +12,7 @@ $ ya pack -a pavvd/autojump
 
 ## Usage
 
-Add this at the end of ~/.config/yazi/keymap.toml
+Add this at the end of ~/.config/yazi/keymap.toml.
 You can change "s" to preferred key.
 
 ```toml
