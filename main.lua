@@ -59,16 +59,12 @@ return {
        return
     end
 
-    -- Trim the input using manual function
     local term = trim_string(text_value)
-
-    -- Check if the input was empty after trimming
     if #term == 0 then
       ya.notify({ title = "Autojump", content = "No jump phrase provided", level = "warn", timeout = 3 })
       return
     end
 
-    -- Run autojump
     local result = run_autojump(term)
 
     if result.err then
@@ -76,7 +72,6 @@ return {
       return
     end
 
-    -- Validate the path received from autojump
     local target_url = Url(result.path)
     local cha = fs.cha(target_url)
 
