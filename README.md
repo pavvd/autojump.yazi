@@ -17,7 +17,7 @@ You can change "s" to preferred key.
 
 ```toml
 [[manager.prepend_keymap]]
-on   = ["s"] # Trigger with sequence 'z' then 'j'
+on   = ["s"] #Multi key hotkey looks like this [ "z", "j" ]
 run  = "plugin autojump"
 desc = "Change directory using autojump"
 ```
